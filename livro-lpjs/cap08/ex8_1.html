@@ -1,0 +1,18 @@
+<script>
+    function calcularMedia(){
+        if(arguments.length == 0){
+            alert("Informe, no mínimo, uma nota");
+            return;
+        }
+        let soma = 0;
+        const numNotas = arguments.length;
+
+        for(let i = 0; i < numNotas; i++){
+            soma += arguments[i];
+        }
+
+        const media = soma / numNotas;
+        alert(`Média das Notas: ${media.toFixed(1)}`)
+    }
+    calcularMedia(2, 10);
+</script>

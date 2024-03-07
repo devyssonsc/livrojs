@@ -1,0 +1,12 @@
+<script>
+    const palavra = prompt("Palavra: ");
+    const tam = palavra.length;
+
+    let resposta = palavra.charAt(tam - 1).toUpperCase();
+
+    for(let i = palavra.length - 2; i >= 0; i--){
+        resposta += palavra.charAt(i).toLowerCase();
+    }
+
+    alert(`Palavra: ${palavra}\nInvertida: ${resposta}`);
+</script>
